@@ -1,7 +1,7 @@
 import { Formik, Form, Field } from "formik";
 
 import css from "./SearchBar.module.css";
-export default function SearchBar({ onSearch, renderMessage }) {
+export default function SearchBar({ onSearch }) {
   const initialValues = { search: "" };
   const handleSubmit = (values, { resetForm }) => {
     if (values.search === "") {
