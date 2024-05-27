@@ -4,7 +4,7 @@ import { RotatingLines } from "react-loader-spinner";
 import { Toaster, toast } from "react-hot-toast";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import SearchBar from "../SearchBar/SearchBar";
-import LoadMoreButton from "../LoadMoreButton/LoadMoreButton";
+import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import "./App.css";
 import ImageGallery from "../ImageGallery/ImageGallery";
 import ImageModal from "../ImageModal/ImageModal";
@@ -114,7 +114,7 @@ function App() {
         />
         <ImageGallery photos={photos} openModal={openModal} />
         {photos.length > 0 && !loading && (
-          <LoadMoreButton onClick={handleLoadMore} />
+          <LoadMoreBtn onClick={handleLoadMore} />
         )}
       </div>
     </>
